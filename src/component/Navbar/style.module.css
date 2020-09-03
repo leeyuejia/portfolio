@@ -1,0 +1,86 @@
+.NavBar {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+  padding: 0 2rem;
+  /* background-color: var(--DT-darkBgColor); */
+}
+.NavBarOnScroll {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+  padding: 0 2rem;
+  background-color: var(--DT-darkBgColor);
+  box-shadow: 0px 10px 5px var(--DT-secondaryColor) ;
+  border-bottom: 1px solid var(--DT-darkBgColor);
+  /* change to shadow */
+}
+.logoContainer {
+  border: 1px solid black;
+  width:300px;
+  height:50px;
+}
+#navLogo {
+  width:50px;
+  height:auto;
+  float: left;
+}
+
+h1 {
+  font-weight: 300;
+}
+
+.navList {
+  border: 1px solid black;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 500px;
+}
+
+li {
+  min-width: 90px;
+  text-decoration: none;
+  margin: 1rem ;
+}
+.PinterestIcon,.InstagramIcon,.GitHubIcon,.LinkedInIcon,.CodePen {
+  font-size: 1.5rem!important;
+  margin: 0 0.5rem;
+  color: var(--DT-secondaryColor);
+  align-self: center;
+}
+.CodePen {
+  display: flex!important;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.socialBtn {
+  width: 300px;
+  border: 1px solid black;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+.link {
+  text-decoration:none;
+  color: var(--DT-highlightColor);
+  padding:1rem 0.1rem;
+  border: 1px solid black;
+}
+.link:hover {
+  font-weight: 800;
+  color: var(--DT-highlightColor);
+  border-bottom: 10px solid var(--DT-highlightColor);
+}
+
+
