@@ -1,0 +1,113 @@
+.about {
+  background-color: white;
+  height: 1000px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.aboutMe {
+  display: flex;
+  flex-flow: row nowrap;
+  width:60%;
+  /* border: 1px solid black; */
+}
+.aboutMeTitle {
+  color: var(--DT-highlightColor);
+  font-weight: 600;
+  width:20%;
+  height: 40%;
+  font-size: 20pt;
+  /* border: 1px solid black; */
+}
+.aboutMeDescription {
+  
+  flex:1 1 auto;
+  width:40%;
+  color: var(--DT-darkerBgColor);
+  /* border: 1px solid black; */
+  padding: 0 2rem;
+  border-left: 2px solid var(--DT-highlightColor);
+}
+.description {
+  margin: 0;
+  line-height: 1.3rem;;
+  text-align: justify;
+  text-justify: auto;
+}
+.aboutMeProfile {
+  align-self:center;
+  width:30%;
+  height: auto;
+  border-radius: 50%;
+  /* border: 1px solid black; */
+}
+.profilePic {
+  width:200px;
+  height:200px;
+  border-radius: 50%;
+  box-shadow: 10px 10px 10px black;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width : 1250px) {
+  #intro {
+    width:60%;
+  }
+  #largeTitle {
+    font-size:40pt;
+  }
+  #hi {
+    font-size:20pt;
+  }
+}
+
+/* for ipad pro */
+@media only screen and (max-width : 1024px) {
+  #intro {
+    width:80%;
+  }
+  #largeTitle {
+    font-size:40pt;
+  }
+  #hi {
+    font-size:20pt;
+  }
+}
+
+/* for iphone */
+@media only screen and (max-width : 768px) {
+  #intro {
+    width:80%;
+  }
+  #largeTitle {
+    font-size:40pt;
+  }
+  #hi {
+    font-size:20pt;
+  }
+}
+
+@media only screen and (max-width : 378px) {
+  #intro {
+    width:80%;
+  }
+  #largeTitle {
+    font-size:40pt;
+  }
+  #hi {
+    font-size:20pt;
+  }
+}
+
