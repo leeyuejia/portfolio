@@ -4,6 +4,7 @@ import './App.css';
 import Navbar from './component/Navbar';
 import Introduction from './component/Introduction/Introduction';
 import About from './component/About/About';
+import Project from './component/Project/Project';
 
 
 function App() {
@@ -12,10 +13,8 @@ function App() {
       <Navbar/>
       <Introduction/>
       <About/>
-      
-      {/* <About/>
       <Project/>
-      <Contact/>
+      {/* <Contact/>
       <Footer/> */}
     </div>
   );

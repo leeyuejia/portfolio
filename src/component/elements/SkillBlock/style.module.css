@@ -1,10 +1,14 @@
-.aboutMe {
-  background-color: white;
-  height: 1000px;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
+.skillBlock {
+  background-color : var(--DT-secondaryColor);
+  padding:0.2rem 1rem;
+  margin: 0.4rem 1rem;
+  border-radius: 500px;
+  flex: 1 1 auto;
+}
+.text {
+  color : var(--DT-lightColor);
+  margin: 0;
+  font-size:12pt;
 }
 
 

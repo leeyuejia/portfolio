@@ -1,0 +1,132 @@
+.skillset {
+  display: flex;
+  flex-flow: row nowrap;
+  width:70%;
+  margin: 2rem auto;
+  border: 1px solid black;
+}
+.skillsetTitle {
+  color: var(--DT-highlightColor);
+  font-weight: 700;
+  text-transform: uppercase;
+  width:20%;
+  height: 40%;
+}
+.title {
+  text-align: right;
+  font-size: 25pt;
+  padding:0;
+  margin:0 1rem 0 0;
+}
+.skillContainer{
+  flex:1 1 auto;
+  width:40%;
+  color: var(--DT-darkerBgColor);
+  padding: 0 1rem;
+  border-left: 2px solid var(--DT-highlightColor);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: space-between;
+}
+.tech,.soft {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+
+  /* border: 1px solid black; */
+}
+.tech {
+  margin-bottom: 1rem;
+}
+.soft {
+  margin-top: 1rem;
+}
+.techTitle, .softTitle {
+  font-size: 16pt;
+  margin: 0 1rem;
+  text-align: left;
+}
+.techContainer, .softContainer{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  margin-top:0.2rem;
+}
+.resumeContainer {
+  align-self:flex-end;
+  width:30%;
+  margin-bottom: 0.5rem;
+  
+}
+#resumeBtn {
+  background-color: var(--DT-darkerBgColor);
+  color: var(--DT-secondaryColor);
+  border: none;
+  padding: 0.6rem 1.8rem;
+  font-size: 16pt;
+  box-shadow: 5px 5px 5px black;
+  min-width: 160px;
+  transition: transform .5s;
+}
+#resumeBtn:focus {
+  outline: none;
+}
+#resumeBtn:hover {
+  background-color: var(--DT-darkBgColor);
+  transform: scale(1.1);
+}
+
+
+
+
+@media (max-width : 1250px) {
+  #intro {
+    width:60%;
+  }
+  #largeTitle {
+    font-size:40pt;
+  }
+  #hi {
+    font-size:20pt;
+  }
+}
+
+/* for ipad pro */
+@media only screen and (max-width : 1024px) {
+  #intro {
+    width:80%;
+  }
+  #largeTitle {
+    font-size:40pt;
+  }
+  #hi {
+    font-size:20pt;
+  }
+}
+
+/* for iphone */
+@media only screen and (max-width : 768px) {
+  #intro {
+    width:80%;
+  }
+  #largeTitle {
+    font-size:40pt;
+  }
+  #hi {
+    font-size:20pt;
+  }
+}
+
+@media only screen and (max-width : 378px) {
+  #intro {
+    width:80%;
+  }
+  #largeTitle {
+    font-size:40pt;
+  }
+  #hi {
+    font-size:20pt;
+  }
+}
+
