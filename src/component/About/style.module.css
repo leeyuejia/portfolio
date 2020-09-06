@@ -1,17 +1,18 @@
 .aboutContainer {
   position: relative;
+  padding-top: 5rem;
 
   /* background-color: rgb(233, 179, 179); */
 }
 .about {
   /* background-color: white; */
-  height: 800px;
+  height: 1000px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-end;
   align-items: center;
-  border: 1px solid black;
-  margin-top:2rem;
+  /* border: 1px solid black; */
+  margin-top:5rem;
 
 }
 .bgTitle {
@@ -28,6 +29,46 @@
   color: var(--DT-lightColor);
     /* background-color: rgb(233, 179, 179); */
 }
+
+@media (max-width : 1350px) {
+  #intro {
+    width: 80%;
+  }
+}
+
+/* for ipad pro */
+@media only screen and (max-width : 1024px) {
+  .bgTitle {
+    font-size: 140pt;
+  }
+}
+
+/* for iphone */
+@media only screen and (max-width : 768px) {
+  #intro {
+    width:80%;
+  }
+  #largeTitle {
+    font-size:40pt;
+  }
+  .bgTitle {
+    font-size: 100pt;
+  }
+}
+
+@media only screen and (max-width : 378px) {
+  #intro {
+    width:80%;
+  }
+  #largeTitle {
+    font-size:40pt;
+  }
+  #hi {
+    font-size:20pt;
+  }
+}
+
+
 
 
 

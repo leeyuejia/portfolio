@@ -1,27 +1,36 @@
 .NavBar {
+  position: fixed;
+  width: 100%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  margin: 1rem auto;
-  padding: 0 2rem;
-  /* background-color: var(--DT-darkBgColor); */
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  background-color: var(--DT-darkerBgColor);
+  z-index: 2000;
 }
 .NavBarOnScroll {
+  position: fixed;
+  width: 100%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  margin: 2rem auto;
-  padding: 0 2rem;
-  background-color: var(--DT-darkBgColor);
-  box-shadow: 0px 10px 5px var(--DT-secondaryColor) ;
-  border-bottom: 1px solid var(--DT-darkBgColor);
-  /* change to shadow */
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  background-color: var(--DT-darkerBgColor);
+  box-shadow: 0px 10px 5px black ;
+  z-index: 1;
+
 }
+.none {
+  display: none;
+}
+
 .logoContainer {
-  border: 1px solid black;
-  width:300px;
+  /* border: 1px solid black; */
+  width:200px;
   height:50px;
 }
 #navLogo {
@@ -35,7 +44,7 @@ h1 {
 }
 
 .navList {
-  border: 1px solid black;
+  flex: 1 1 auto;
   padding: 0;
   list-style: none;
   display: flex;
@@ -57,6 +66,14 @@ li {
   color: var(--DT-secondaryColor);
   align-self: center;
 }
+
+.PinterestIcon:hover,.InstagramIcon:hover,
+.GitHubIcon:hover,
+.LinkedInIcon:hover,
+.CodePen:hover{
+  color: var(--DT-highlightColor);
+}
+
 .CodePen {
   display: flex!important;
   flex-flow: column nowrap;
@@ -64,8 +81,8 @@ li {
   align-items: center;
 }
 .socialBtn {
-  width: 300px;
-  border: 1px solid black;
+  width: 200px;
+  /* border: 1px solid black; */
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
@@ -75,12 +92,88 @@ li {
   text-decoration:none;
   color: var(--DT-highlightColor);
   padding:1rem 0.1rem;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 .link:hover {
-  font-weight: 800;
+  font-weight: 700;
   color: var(--DT-highlightColor);
-  border-bottom: 10px solid var(--DT-highlightColor);
+  border-bottom: 8px solid var(--DT-highlightColor);
+}
+.mobileNavBar {
+  display:none;
 }
 
 
+@media (max-width : 1350px) {
+  #intro {
+    width:60%;
+  }
+  #largeTitle {
+    font-size:40pt;
+  }
+  #hi {
+    font-size:20pt;
+  }
+}
+
+/* for ipad pro */
+@media only screen and (max-width : 1024px) {
+  #intro {
+    width:80%;
+  }
+  #largeTitle {
+    font-size:40pt;
+  }
+  #hi {
+    font-size:20pt;
+  }
+}
+
+/* for iphone */
+@media only screen and (max-width : 768px) {
+  #intro {
+    width:80%;
+  }
+  #largeTitle {
+    font-size:40pt;
+  }
+  #hi {
+    font-size:20pt;
+  }
+}
+
+@media only screen and (max-width : 400px) {
+.NavBar {
+  display:none;
+}
+.mobileLogoContainer {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--DT-highlightColor);
+}
+.mobileNavBar {
+  background-color: var(--DT-darkerBgColor)!important;
+  display: block;
+  width:100%;
+}
+.mobileNavBarMenu {
+  font-family: 'Segoe UI',sans-serif;
+}
+.link {
+  font-size: 16pt;
+}
+.link:hover {
+  font-weight: 700;
+  border:none;
+}
+.socialBtn {
+  border-top: 0.5px solid var(--DT-secondaryColor);
+  padding-top: .5rem;
+  margin: 0.5rem auto;
+  width: 100%;
+  justify-content: space-around;
+}
+}

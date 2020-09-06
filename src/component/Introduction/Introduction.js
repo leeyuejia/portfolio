@@ -3,7 +3,7 @@ import style from './style.module.css'
 
 export default function Introduction (props) {
     return (
-        <div className={style.introContainer}>
+        <div className={style.introContainer} id='home'>
             <div className={style.introductionCard}>
                 <div className={style.leftBar}></div>
                 <div className={style.contentContainer}>

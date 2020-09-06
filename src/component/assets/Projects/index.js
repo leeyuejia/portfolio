@@ -5,11 +5,11 @@ import project4 from '../PlayboyStarterPack.png'
 const projects = [
     {   number : '01',
         image: gamerstagram,
-        title : 'Project 4 Title',
+        title : 'Terrorist Handler',
         description : 'One of the issue that surface during the COVID-19 pandemic was managing both work and child for stay-home parent. Our team responded by building an app for children to learn through fun games. Meaningful statistics are collected and shown to parent to help better understand their child learning journey.',
         listTech : ['MERN','React-Game-Kit','Mongoose','React-Spring','Axios'],
-        partners : [{name:'Tam,jessephamsg', link:'https://github.com/jessephamsg'},
-                    {name:'Lina, lyyyn', link:'https://github.com/lyyyn'}],
+        partners : [{name:'TAM , jessephamsg', link:'https://github.com/jessephamsg'},
+                    {name:'LINA , lyyyn', link:'https://github.com/lyyyn'}],
         date : '4weeks, Sept 2020',
         githubLink : '#',
         launchLink : '#'
@@ -19,8 +19,8 @@ const projects = [
     title : 'Playboy Starter Pack',
     description : 'A social web application that contains a library of quirky memes, puns and gifs contributed by users. Use this library to engage or start a conversation with your partner or “partner-to-be”, making communication a relax and light-hearted manner.Try this to help that special one to be more comfortable texting you! ',
     listTech : ['MERN','Mongoose','MDBReact','Axios'],
-    partners : [{name:'Javier,redgreenblues', link:'https://github.com/redgreenblues'},
-                {name:'Jared, teppy90', link:'https://github.com/teppy90'}],
+    partners : [{name:'JAVIER , redgreenblues', link:'https://github.com/redgreenblues'},
+                {name:'JARED , teppy90', link:'https://github.com/teppy90'}],
     date : '2weeks, Aug 2020',
     githubLink : 'https://github.com/leeyuejia/playboy-starter-pack',
     launchLink : 'https://playboy-starter-pack-frontend.herokuapp.com/'

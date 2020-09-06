@@ -7,7 +7,7 @@ export default function About (props) {
 
 
     return (
-        <div className={style.aboutContainer}>
+        <div className={style.aboutContainer} id='about'>
             <div className={style.about}>
                 <AboutMe/>
                 <SkillSet/>

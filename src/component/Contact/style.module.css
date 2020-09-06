@@ -1,0 +1,151 @@
+.contactContainer {
+  background-color: var(--DT-darkerBgColor);
+  padding: 10rem 5rem;
+  position: relative;
+  z-index: 1;
+  height: 100%;
+}
+.bgTitle {
+  margin: 0;
+  text-align: right;
+  font-size: 180pt;
+  bottom: 0px;
+  position: absolute;
+  right:1px;
+  font-weight: 700;
+  padding: 0;
+  line-height: 250px;
+  color: var(--DT-darkBgColor);
+  z-index: -1;
+}
+.contact {
+  display: flex;
+  flex-flow: column nowrap;
+  width:50%;
+  /* border: 1px solid black; */
+  margin: 2rem auto;
+  align-items: center;
+}
+.contactTitle {
+  font-size: 12pt;
+  min-height: 40%;
+  margin: 0 auto;
+  color: var(--DT-secondaryColor);
+  /* border: 1px solid black; */
+}
+.emailLink {
+  text-decoration: none;
+  color: var(--DT-highlightColor);
+}
+.emailLink:hover {
+  font-weight: 500;
+  color: var(--DT-highlightColor);
+}
+.formContainer {
+  display: flex;
+  flex-flow:column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: 3rem auto;
+}
+.textarea {
+  padding:0;
+  margin:1rem;
+  margin-top:2rem;
+  width:100%;
+  height: 200px!important;
+  appearance: none;
+  color: var(--DT-primaryColor);
+  border:1px solid var(--DT-secondaryColor);
+  background-color: var(--DT-darkerBgColor);
+}
+.textarea::placeholder {
+  font-size : 12pt;
+  font-family: 'Segoe UI',sans-serif!important;
+  color: var(--DT-secondaryColor)
+}
+.textarea:focus {
+  background-color: var(--DT-darkBgColor);
+  outline: none;
+}
+
+#sendBtn {
+  background-color: var(--DT-darkerBgColor);
+  color: var(--DT-secondaryColor);
+  border: none;
+  padding: 0.6rem 1.8rem;
+  font-size: 12pt;
+  font-weight: 500;
+  box-shadow: 5px 5px 5px black;
+  min-width: 160px;
+  transition: transform .5s;
+  align-self: flex-end;
+}
+#sendBtn:focus {
+  outline: none;
+}
+#sendBtn:hover {
+  background-color: var(--DT-darkBgColor);
+  transform: scale(1.1);
+}
+.whatsappContainer {
+  margin-top: 5rem;
+  width: 70%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.coffeeText {
+  color: var(--DT-secondaryColor);
+  text-align: center;
+}
+.whatsappBtnContainer {
+  margin: 2rem auto;
+}
+.WhatsAppIcon {
+  color: var(--DT-highlightColor);
+  margin-right:0.5rem;
+}
+
+
+
+
+
+@media (max-width : 1350px) {
+
+}
+
+/* for ipad pro */
+@media only screen and (max-width : 1024px) {
+  .bgTitle{
+    font-size: 140pt;
+  }
+}
+
+/* for iphone */
+@media only screen and (max-width : 768px) {
+  .bgTitle {
+    font-size:100pt;
+  }
+  .contact {
+    width:100%;
+  }
+  .contactContainer {
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width : 378px) {
+  #intro {
+    width:80%;
+  }
+  #largeTitle {
+    font-size:40pt;
+  }
+  #hi {
+    font-size:20pt;
+  }
+}
+

@@ -7,7 +7,10 @@ export default function Project (props) {
     
 
     return (
-        <div className={style.projectContainer}>
+        <div className={style.projectContainer} id='project'>
+            <div className={style.bgTitle}>
+            PROJECT
+            </div>
             <div className={style.project}>
                 {
                 projects.map(project => {
@@ -25,6 +28,7 @@ export default function Project (props) {
                 })
             }
             </div>
+            
 
         </div>
     )

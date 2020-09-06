@@ -1,12 +1,11 @@
 .aboutMe {
   display: flex;
   flex-flow: row nowrap;
-  width:70%;
-  border: 1px solid black;
+  width:60%;
+  /* border: 1px solid black; */
   margin: 2rem auto;
 }
 .aboutMeTitle {
-  color: var(--DT-highlightColor);
   font-weight: 700;
   text-transform: uppercase;
   width:20%;
@@ -15,7 +14,8 @@
   /* border: 1px solid black; */
 }
 .title {
-  text-align: right;
+  color: var(--DT-highlightColor)!important;
+  text-align: left;
   font-size: 25pt;
   padding:0;
   margin:0 1rem 0 0;
@@ -44,47 +44,27 @@
   /* border: 1px solid black; */
 }
 .profilePic {
-  width:200px;
-  height:200px;
+  width:95%;
+  height:auto;
   border-radius: 50%;
   box-shadow: 10px 10px 10px black;
 }
 
-@media (max-width : 1250px) {
-  #intro {
-    width:60%;
-  }
-  #largeTitle {
-    font-size:40pt;
-  }
-  #hi {
-    font-size:20pt;
+@media (max-width : 1350px) {
+  .aboutMe {
+    width:80%;
   }
 }
 
 /* for ipad pro */
 @media only screen and (max-width : 1024px) {
-  #intro {
-    width:80%;
-  }
-  #largeTitle {
-    font-size:40pt;
-  }
-  #hi {
-    font-size:20pt;
-  }
+
 }
 
 /* for iphone */
 @media only screen and (max-width : 768px) {
-  #intro {
-    width:80%;
-  }
-  #largeTitle {
-    font-size:40pt;
-  }
-  #hi {
-    font-size:20pt;
+  .aboutMe {
+    width:90%;
   }
 }
 

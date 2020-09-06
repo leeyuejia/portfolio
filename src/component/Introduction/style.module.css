@@ -1,8 +1,9 @@
 .introContainer {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   width: 100%;
-  height: 550px;
+  height: 800px;
   display: flex;
+  padding-top: 5rem;
   flex-flow: column nowrap;
   justify-content: flex-end;
   align-content: flex-end;
@@ -11,9 +12,9 @@
 .introductionCard {
   margin:0 auto;
   position: relative;
-  bottom: -40px;
+  bottom: -50px;
   width:60%;
-  height: 500px;
+  height: 550px;
   background-color: var(--DT-darkBgColor);
   box-shadow: 20px 20px 10px black;
   display: flex;
@@ -60,18 +61,15 @@
   color: var(--DT-secondaryColor);
   margin:0;
 }
-@media (max-width : 1250px) {
-  #intro {
-    width:60%;
+@media (max-width : 1350px) {
+  .introductionCard {
+    width: 80%;
   }
   #largeTitle {
-    font-size:40pt;
+    font-size:50pt;
   }
-  #hi {
-    font-size:20pt;
-  }
-}
 
+}
 /* for ipad pro */
 @media only screen and (max-width : 1024px) {
   #intro {
@@ -87,16 +85,22 @@
 
 /* for iphone */
 @media only screen and (max-width : 768px) {
-  #intro {
-    width:80%;
+  .introductionCard {
+    width: 90%;
   }
   #largeTitle {
-    font-size:40pt;
+    font-size:35pt;
   }
   #hi {
     font-size:20pt;
   }
+  #intro {
+    font-size:12pt;
+    width:60%;
+  }
 }
+
+
 
 @media only screen and (max-width : 378px) {
   #intro {

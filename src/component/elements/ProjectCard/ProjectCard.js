@@ -14,39 +14,45 @@ export default function ProjectCard (props) {
                     alt={props.title}
                     title={props.title}/>
             </div>
+            <div className={style.descriptionContainer}>
+                <div className={style.projectDescription}>
 
-            <div className={style.projectDescription}>
-
-                <div className={style.leftContainer}>
-                    <div className={style.description}>
-                        {props.description}
+                    <div className={style.leftContainer}>
+                        <div className={style.description}>
+                            {props.description}
+                        </div>
+                        <ul className={style.listOfTech}>
+                            {props.listTech.map((eachTech,index) => {
+                                return <li className={style.eachTech}>{eachTech}</li>
+                            })}
+                        </ul>
                     </div>
-                    <ul className={style.listOfTech}>
-                        {props.listTech.map((eachTech,index) => {
-                            return <li className={style.eachTech}>{eachTech}</li>
-                        })}
-                    </ul>
+
+                    <div className={style.rightContainer}>
+                        <p className={style.number}>{props.number}</p>
+                        <p className={style.projectTitle}>{props.title}</p>
+                        {!props.partners? null :
+                        
+                        <p className={style.partner}>
+                            with
+                            <br></br>
+                        {props.partners.map((partner,index) => {
+                                return <a 
+                                    href={partner.link}
+                                    className={style.partnerLink}
+                                    target='blank'>
+                                    {partner.name}
+                                    <br></br>
+                                    </a>
+                            })}
+                            </p>
+                        }
+                        
+                        <p className={style.date}>{props.date}</p>
+                    </div>
+
                 </div>
 
-                <div className={style.rightContainer}>
-                    <p className={style.Number}>{props.number}</p>
-                    <p className={style.projectTitle}>{props.title}</p>
-                    <p className={style.partner}>
-                        with
-                        <br></br>
-                        
-                        {!props.partners? null :
-                        props.partners.map((partner,index) => {
-                            return <a 
-                                href={partner.link}
-                                className={style.partnerLink}
-                                target='blank'>
-                                {partner.name}
-                                </a>
-                        })}
-                    </p>
-                    <p className={style.date}>{props.date}</p>
-                </div>
                 <div className={style.linkContainer}>
                     <a href={props.githubLink} target='blank'>
                         <GitHubIcon  className={style.GitHubIcon}/>

@@ -1,9 +1,9 @@
 .skillBlock {
   background-color : var(--DT-secondaryColor);
-  padding:0.2rem 1rem;
+  padding:0.2rem 1.5rem;
   margin: 0.4rem 1rem;
   border-radius: 500px;
-  flex: 1 1 auto;
+  flex: 0 1 auto;
 }
 .text {
   color : var(--DT-lightColor);
@@ -12,7 +12,7 @@
 }
 
 
-@media (max-width : 1250px) {
+@media (max-width : 1350px) {
   #intro {
     width:60%;
   }
@@ -39,15 +39,7 @@
 
 /* for iphone */
 @media only screen and (max-width : 768px) {
-  #intro {
-    width:80%;
-  }
-  #largeTitle {
-    font-size:40pt;
-  }
-  #hi {
-    font-size:20pt;
-  }
+
 }
 
 @media only screen and (max-width : 378px) {

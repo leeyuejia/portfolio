@@ -1,17 +1,20 @@
 .projectContainer {
   position: relative;
   background-color: var(--DT-darkerBgColor);
+  /* z-index: 1; */
+
 }
 .project {
-  background-color: var(--DT-darkerBgColor);
+  /* background-color: var(--DT-darkerBgColor); */
+  /* border: 1px solid black; */
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
-  width:70%;
+  width:60%;
   margin:2rem auto;
-  height: 2500px;
+  margin-bottom: 0;
+  height: 1800px;
 
 }
 .bgTitle {
@@ -23,62 +26,32 @@
   right:1px;
   font-weight: 700;
   padding: 0;
-  z-index: -2;
   line-height: 250px;
-  color: var(--DT-lightColor);
+  color: var(--DT-darkBgColor);
+  /* z-index: -1; */
     /* background-color: rgb(233, 179, 179); */
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width : 1250px) {
-  #intro {
-    width:60%;
-  }
-  #largeTitle {
-    font-size:40pt;
-  }
-  #hi {
-    font-size:20pt;
-  }
-  .bgTitle{
-    font-size:150pt;
+@media (max-width : 1350px) {
+  .project {
+    width:80%;
   }
 }
 
 /* for ipad pro */
 @media only screen and (max-width : 1024px) {
-  #intro {
-    width:80%;
-  }
-  #largeTitle {
-    font-size:40pt;
-  }
-  #hi {
-    font-size:20pt;
+  .bgTitle {
+    font-size:140pt;
   }
 }
 
 /* for iphone */
 @media only screen and (max-width : 768px) {
-  #intro {
-    width:80%;
+  .project {
+    width:90%;
   }
-  #largeTitle {
-    font-size:40pt;
-  }
-  #hi {
-    font-size:20pt;
+  .bgTitle {
+    font-size:100pt;
   }
 }
 
@@ -93,4 +66,3 @@
     font-size:20pt;
   }
 }
-

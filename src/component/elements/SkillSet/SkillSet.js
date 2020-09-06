@@ -1,6 +1,7 @@
 import React from 'react'
 import style from './style.module.css'
 import SkillBlock from '../SkillBlock'
+import resume from '../../assets/resume.pdf'
 
 export default function SkillSet (props) {
     const techSkill = ['Javascript(ES6+)', 'HTML&CSS', 'React', 'Jquery', 'ExpressJS',
@@ -45,7 +46,9 @@ export default function SkillSet (props) {
             </div>
 
             <div className={style.resumeContainer}>
+                <a href={resume} download>
                 <button id={style.resumeBtn}>resume</button>
+                </a>
             </div>
 
     </div>

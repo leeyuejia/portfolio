@@ -1,11 +1,13 @@
 
 :root {
   font-family: 'Segoe UI',sans-serif;
+  z-index: -1000;
 }
 
 .App {
   /* background-color : var(--DT-darkBgColor); */
   text-align: center;
+  z-index: -1000;
 }
 
 

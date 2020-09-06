@@ -1,14 +1,12 @@
-* {
-  color: var(--DT-secondaryColor);
-  font-size: 12pt;
-}
-
 .ProjectCard {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
   margin: 6rem auto;
+  color: var(--DT-secondaryColor);
+  font-size: 12pt;
+
 }
 .imgContainer {
   width: 50%;
@@ -17,9 +15,18 @@
   width: 120%;
   height: auto;
 }
+.descriptionContainer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width:70%;
+  position: relative;
+  flex: 0 1 auto; 
+}
 .projectDescription {
   position: relative;
-  width:70%;
+  width:100%;
   background-color: var(--DT-darkBgColor);
   padding: 1rem;
   display: flex;
@@ -39,6 +46,7 @@
   margin: 0.5rem;
   margin-top: 0;
   text-align: justify;
+  /* line-height: 110%; */
 
 }
 .listOfTech {
@@ -65,6 +73,51 @@
 .rightContainer {
   flex: 0 1 auto;
   width: 30%;
+  display : flex;
+  flex-flow : column nowrap;
+  text-align : left;
+  justify-content: space-between;
+
+  margin: 0 0.5rem;
+}
+.number {
+  font-size : 20pt;
+  color: var(--DT-highlightColor);
+  font-weight: 700;
+  margin-bottom: 0.1rem;
+}
+.partner, .partnerLink,.date {
+  font-size : 8pt !important;
+  color: var(--DT-secondaryColor)!important;
+  margin: 0;
+}
+.projectTitle {
+  font-size:16pt;
+  color: var(--DT-primaryColor)!important;
+  font-weight: 700;
+  justify-self: start; 
+}
+.partnerLink:hover {
+  color: var(--DT-highlightColor)!important;
+}
+.date {
+  margin-top: auto;
+}
+.linkContainer {
+  margin-left:70%;
+  margin-top: 0.5rem;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+}
+.LaunchIcon,.GitHubIcon {
+  color:var(--DT-secondaryColor)!important;
+  margin-right: 20px;
+  transition: transform .5s!important;
+}
+.LaunchIcon:hover,.GitHubIcon:hover {
+  fill: var(--DT-highlightColor)!important;
+  transform: scale(1.2);
 }
 
 
@@ -73,7 +126,9 @@
 
 
 
-@media (max-width : 1250px) {
+
+
+@media (max-width : 1350px) {
   #intro {
     width:60%;
   }
@@ -100,14 +155,8 @@
 
 /* for iphone */
 @media only screen and (max-width : 768px) {
-  #intro {
-    width:80%;
-  }
-  #largeTitle {
-    font-size:40pt;
-  }
-  #hi {
-    font-size:20pt;
+  .projectTitle {
+    font-size:12pt;
   }
 }
 
