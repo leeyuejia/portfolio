@@ -45,26 +45,18 @@
 
 /* for iphone */
 @media only screen and (max-width : 768px) {
-  #intro {
-    width:80%;
-  }
-  #largeTitle {
-    font-size:40pt;
+  .about {
+    min-height: 1200px;
+    justify-content: center;
   }
   .bgTitle {
     font-size: 100pt;
   }
 }
 
-@media only screen and (max-width : 378px) {
-  #intro {
-    width:80%;
-  }
-  #largeTitle {
-    font-size:40pt;
-  }
-  #hi {
-    font-size:20pt;
+@media only screen and (max-width : 450px) {
+  .bgTitle {
+    font-size: 80pt;
   }
 }
 
@@ -112,26 +104,15 @@
 
 /* for iphone */
 @media only screen and (max-width : 768px) {
-  #intro {
-    width:80%;
-  }
-  #largeTitle {
-    font-size:40pt;
-  }
-  #hi {
-    font-size:20pt;
-  }
+.aboutContainer {
+  width: 100%;
+}
+.bgTitle {
+  font-size:100pt;
+  line-height: 80px;
+}
 }
 
 @media only screen and (max-width : 378px) {
-  #intro {
-    width:80%;
-  }
-  #largeTitle {
-    font-size:40pt;
-  }
-  #hi {
-    font-size:20pt;
-  }
 }
 

@@ -57,7 +57,7 @@
 .resumeContainer {
   align-self:flex-end;
   width:30%;
-  margin-bottom: 0.5rem;
+  margin: 0.5rem;
   
 }
 #resumeBtn {
@@ -96,22 +96,18 @@
 @media only screen and (max-width : 768px) {
   .skillset {
     width:90%;
+    flex-flow: column nowrap;
   }
-  .title {
-    font-size: 18pt;
+  .skillsetTitle,.skillContainer {
+    width: 100%;
+    margin:1rem;
   }
 
 }
 
-@media only screen and (max-width : 378px) {
-  #intro {
-    width:80%;
-  }
-  #largeTitle {
-    font-size:40pt;
-  }
-  #hi {
-    font-size:20pt;
+@media only screen and (max-width : 450px) {
+  .techTitle, .softTitle {
+    font-size:12pt;
   }
 }
 

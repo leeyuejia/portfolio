@@ -160,15 +160,28 @@
   }
 }
 
-@media only screen and (max-width : 378px) {
-  #intro {
-    width:80%;
+@media only screen and (max-width : 450px) {
+  .projectTitle {
+    font-size:12pt;
   }
-  #largeTitle {
-    font-size:40pt;
+  .ProjectCard {
+    flex-flow: column nowrap;
+    margin: 1rem auto;
+    font-size: 12pt;
   }
-  #hi {
-    font-size:20pt;
+  .imgContainer ,.projectSS,.descriptionContainer{
+    width:100%;
   }
+  .projectDescription {
+    flex-flow: column nowrap;
+  }
+  .rightContainer {
+    order: -1;
+    flex-flow: row nowrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center; 
+  }
+
 }
 

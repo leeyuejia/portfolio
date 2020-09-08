@@ -11,11 +11,7 @@ import {
     MDBNavbar,
     MDBNavbarBrand,
     MDBNavbarNav,
-    MDBNavItem,
-    MDBNavLink,
-    MDBNavbarToggler,
     MDBCollapse,
-    MDBContainer,
     MDBHamburgerToggler 
   } from 'mdbreact';
 
@@ -101,7 +97,9 @@ export default function NavBar(props) {
                     >
                 <div className={style.mobileNavBar}>
                     <div className={style.mobileLogoContainer}>
-                        <MDBNavbarBrand>Logo</MDBNavbarBrand>
+                        <div className={style.logoContainer}>
+                            <img src={logo} alt='logo' title='logo' id={style.navLogo}/>
+                        </div>
                         <MDBHamburgerToggler color="#FFB633" id="hamburger1" onClick={toggleCollapse} />
                     </div>
                     <MDBCollapse

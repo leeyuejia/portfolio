@@ -121,13 +121,19 @@
 @media only screen and (max-width : 1024px) {
   .bgTitle{
     font-size: 140pt;
+    line-height: 150px;
   }
 }
 
 /* for iphone */
 @media only screen and (max-width : 768px) {
+  .contactContainer {
+    width: 100%;
+    padding: 5rem 2.5rem;
+  }
   .bgTitle {
     font-size:100pt;
+    line-height: 150px;
   }
   .contact {
     width:100%;

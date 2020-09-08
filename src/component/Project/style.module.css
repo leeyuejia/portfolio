@@ -47,6 +47,9 @@
 
 /* for iphone */
 @media only screen and (max-width : 768px) {
+  .projectContainer {
+    width: 100%;
+  }
   .project {
     width:90%;
   }
@@ -55,14 +58,17 @@
   }
 }
 
-@media only screen and (max-width : 378px) {
-  #intro {
-    width:80%;
+@media only screen and (max-width : 450px) {
+  .projectContainer {
+    width: 100%;
+    height: 150%;
   }
-  #largeTitle {
-    font-size:40pt;
+  .project {
+    width:90%;
+    height: 100%;
+    padding: 3rem 0;
   }
-  #hi {
-    font-size:20pt;
+  .bgTitle {
+    font-size:50pt;
   }
 }

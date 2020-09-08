@@ -41,10 +41,10 @@
   width:30%;
   height: auto;
   border-radius: 50%;
-  /* border: 1px solid black; */
+  margin: 1rem auto;
 }
 .profilePic {
-  width:95%;
+  width:99%;
   height:auto;
   border-radius: 50%;
   box-shadow: 10px 10px 10px black;
@@ -65,6 +65,20 @@
 @media only screen and (max-width : 768px) {
   .aboutMe {
     width:90%;
+    flex-flow: column nowrap;
+
+  }
+  .aboutMeTitle,.aboutMeDescription {
+    width: 100%;
+    margin:1rem;
+  }
+  .aboutMeProfile {
+    min-width: 15rem;
+    order: -1;
+    margin: 1rem;
+  }
+  .description {
+    font-size: 0.8rem;
   }
 }
 
