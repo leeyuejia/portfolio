@@ -121,7 +121,10 @@
 @media only screen and (max-width : 1024px) {
   .bgTitle{
     font-size: 140pt;
-    line-height: 150px;
+    line-height: 200px;
+  }
+  .contact {
+    width: 60%;
   }
 }
 
@@ -143,15 +146,10 @@
   }
 }
 
-@media only screen and (max-width : 378px) {
-  #intro {
-    width:80%;
-  }
-  #largeTitle {
-    font-size:40pt;
-  }
-  #hi {
-    font-size:20pt;
+@media only screen and (max-width : 500px) {
+  .bgTitle {
+    font-size:60pt;
+    line-height: 60pt;
   }
 }
 

@@ -15,15 +15,15 @@ function App() {
   const scrollFunction = () => {
     if((document.body.scrollTop >100 && document.body.scrollTop <900) || (document.documentElement.scrollTop > 100 && document.documentElement.scrollTop < 900) ) {
       console.log('scrolled 80')
-      document.getElementById('navbar').classList.remove('none')
-      document.getElementById('navbar').className='style_NavBarOnScroll__3Y5yu'
+      document.getElementById('navbar1').classList.remove('none')
+      document.getElementById('navbar1').className='style_NavBarOnScroll__3Y5yu'
     } else if (document.body.scrollTop >= 900 || document.documentElement.scrollTop >= 900 ) {
       console.log('scrolled 900')
-      document.getElementById('navbar').className='none'
+      document.getElementById('navbar1').className='none'
     } else {
       console.log('scrolled -80')
-      document.getElementById('navbar').classList.remove('none')
-      document.getElementById('navbar').className='style_NavBar__2zSuE'
+      document.getElementById('navbar1').classList.remove('none')
+      document.getElementById('navbar1').className='style_NavBar__2zSuE'
     }
   }
   return (

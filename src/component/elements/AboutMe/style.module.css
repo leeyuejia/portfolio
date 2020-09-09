@@ -64,13 +64,16 @@
 /* for iphone */
 @media only screen and (max-width : 768px) {
   .aboutMe {
-    width:90%;
+    width:80%;
     flex-flow: column nowrap;
 
   }
   .aboutMeTitle,.aboutMeDescription {
     width: 100%;
     margin:1rem;
+  }
+  .title {
+    font-size: 20pt;
   }
   .aboutMeProfile {
     min-width: 15rem;
@@ -82,7 +85,7 @@
   }
 }
 
-@media only screen and (max-width : 378px) {
+@media only screen and (max-width : 500px) {
   #intro {
     width:80%;
   }

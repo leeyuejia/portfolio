@@ -9,11 +9,28 @@
 
 }
 .imgContainer {
+  position: relative;
   width: 50%;
 }
 .projectSS {
   width: 120%;
   height: auto;
+  z-index: -1;
+}
+.overlay {
+  position: absolute;
+  width:120%;
+  height:101%;
+  transition: all 0.3s ease-out;
+  background-color: var(--DT-darkBgColor);
+  top:0;
+  opacity: 0.95;
+}
+.projectTitleOverlay {
+  display: none;
+}
+.imgContainer:hover .overlay {
+  opacity: 0;
 }
 .descriptionContainer {
   display: flex;
@@ -34,7 +51,6 @@
 }
 .leftContainer {
   width: 70%;
-  
   display: flex;
   flex-flow: column nowrap;
   flex: 1 0 auto;
@@ -87,7 +103,7 @@
   margin-bottom: 0.1rem;
 }
 .partner, .partnerLink,.date {
-  font-size : 8pt !important;
+  font-size : 8pt;
   color: var(--DT-secondaryColor)!important;
   margin: 0;
 }
@@ -120,57 +136,64 @@
   transform: scale(1.2);
 }
 
-
-
-
-
-
-
-
-
 @media (max-width : 1350px) {
-  #intro {
-    width:60%;
-  }
-  #largeTitle {
-    font-size:40pt;
-  }
-  #hi {
-    font-size:20pt;
-  }
 }
 
 /* for ipad pro */
 @media only screen and (max-width : 1024px) {
-  #intro {
-    width:80%;
-  }
-  #largeTitle {
-    font-size:40pt;
-  }
-  #hi {
-    font-size:20pt;
-  }
 }
 
 /* for iphone */
 @media only screen and (max-width : 768px) {
   .projectTitle {
     font-size:12pt;
+    margin:0.2rem;
   }
 }
 
-@media only screen and (max-width : 450px) {
+@media only screen and (max-width : 500px) {
   .projectTitle {
-    font-size:12pt;
+    font-size:16pt;
+    margin-right:0.5rem;
+    flex: 1 0 auto;
+    display: none;
   }
   .ProjectCard {
     flex-flow: column nowrap;
-    margin: 1rem auto;
+    margin: 3rem auto;
     font-size: 12pt;
   }
-  .imgContainer ,.projectSS,.descriptionContainer{
+  .description {
+    margin: 0;
+  }
+  .number {
+    margin-top: auto;
+    margin-bottom: 0;
+  }
+  .imgContainer ,
+  .projectSS,
+  .descriptionContainer,
+  .rightContainer,
+  .leftContainer,
+  .linkContainer {
     width:100%;
+  }
+
+  .overlay {
+    position: absolute;
+    width:101%;
+    height:101%;
+    background-color: var(--DT-darkBgColor);
+    z-index: 2;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .projectTitleOverlay {
+    font-size: 25pt;
+    color: var(--DT-primaryColor)!important;
+    font-weight: 700;
   }
   .projectDescription {
     flex-flow: column nowrap;
@@ -178,9 +201,22 @@
   .rightContainer {
     order: -1;
     flex-flow: row nowrap;
-    width: 100%;
     justify-content: space-between;
-    align-items: center; 
+    align-items: flex-end;
+    margin: 0; 
+  }
+  .leftContainer {
+    border: none;
+    border-top : 1px solid var(--DT-highlightColor);
+    margin: 0.5rem 0;
+  }
+  .partner,.partnerLink,.date {
+    font-size: 6pt;
+  }
+  .linkContainer {
+    margin:0.5rem;
+    align-items: flex-end;
+    justify-content: flex-end;
   }
 
 }

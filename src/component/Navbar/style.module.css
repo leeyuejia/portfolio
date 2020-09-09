@@ -26,6 +26,7 @@
 }
 .none {
   display: none;
+  width: 100%;
 }
 
 .logoContainer {
@@ -100,7 +101,7 @@ li {
   border-bottom: 8px solid var(--DT-highlightColor);
 }
 .mobileNavBar {
-  display:none;
+  display:none !important;
 }
 
 
@@ -143,7 +144,7 @@ li {
 } */
 
 @media only screen and (max-width : 768px) {
-.NavBar,.NavBarOnScroll {
+.NavBar,.NavBarOnScroll,.none,.navList {
   display:none;
 }
 .mobileLogoContainer {
@@ -156,8 +157,18 @@ li {
 }
 .mobileNavBar {
   background-color: var(--DT-darkerBgColor)!important;
-  display: block;
+  display: block!important;
+  position: fixed!important;
   width:100%;
+  z-index:1000;
+  top:0;
+  left:0;
+}
+.mobileNavBarContainer {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
 }
 .mobileNavBarMenu {
   font-family: 'Segoe UI',sans-serif;
