@@ -191,9 +191,11 @@
     align-items: center;
   }
   .projectTitleOverlay {
+    display: block;
     font-size: 25pt;
     color: var(--DT-primaryColor)!important;
     font-weight: 700;
+    z-index: 2000;
   }
   .projectDescription {
     flex-flow: column nowrap;

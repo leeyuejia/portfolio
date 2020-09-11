@@ -8,14 +8,14 @@ export default function Introduction (props) {
                 <div className={style.leftBar}></div>
                 <div className={style.contentContainer}>
 
-                    <p id={style.hi}>hi,
+                    <p id={style.hi}>Hi,
                     <span id={style.afterHi}>I am a</span><br></br>
                     <span id={style.largeTitle}>Full-Stack Developer</span><br></br>
-                    <span id={style.designBG}>with design Background</span><br></br>
+                    <span id={style.designBG}>with design background</span><br></br>
                     </p>
 
                     <p id={style.intro}>
-                    I have been designing physical products since graduation and 
+                    I have been designing physical products since I have graduated and 
                     now I am looking to design meaningful digital products. 
                     I love to connect and bring people together.
                     </p>

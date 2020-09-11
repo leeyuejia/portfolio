@@ -79,8 +79,8 @@ export default function Contact (props) {
                 
                 <div className={style.whatsappContainer}>
                     <p className={style.coffeeText}>
-                    I enjoy connecting and bringing people together from all walks of life,
-                    sharing unique experience to create meaningful relationship. Coffee
+                    I enjoy connecting and bringing people together from all walks of life 
+                    together to share their unique experiences and to create meaningful relationship. Coffee
                     and video games are my thing. Coffee for life.
                     </p>
                     <div className={style.whatsappBtnContainer}>
