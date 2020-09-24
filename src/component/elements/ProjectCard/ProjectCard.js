@@ -13,6 +13,9 @@ export default function ProjectCard (props) {
                     src={props.image} 
                     alt={props.title}
                     title={props.title}/>
+                <div className={style.overlay}>
+                    <p className={style.projectTitleOverlay}>{props.title}</p>
+                </div>
             </div>
             <div className={style.descriptionContainer}>
                 <div className={style.projectDescription}>

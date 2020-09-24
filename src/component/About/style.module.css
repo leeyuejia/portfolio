@@ -45,93 +45,19 @@
 
 /* for iphone */
 @media only screen and (max-width : 768px) {
-  #intro {
-    width:80%;
-  }
-  #largeTitle {
-    font-size:40pt;
+  .about {
+    min-height: 1200px;
+    justify-content: center;
   }
   .bgTitle {
     font-size: 100pt;
+    line-height: 80%;
   }
 }
 
-@media only screen and (max-width : 378px) {
-  #intro {
-    width:80%;
-  }
-  #largeTitle {
-    font-size:40pt;
-  }
-  #hi {
-    font-size:20pt;
+@media only screen and (max-width : 500px) {
+  .bgTitle {
+    font-size: 60pt;
+    line-height: 60pt;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width : 1250px) {
-  #intro {
-    width:60%;
-  }
-  #largeTitle {
-    font-size:40pt;
-  }
-  #hi {
-    font-size:20pt;
-  }
-  .bgTitle{
-    font-size:150pt;
-  }
-}
-
-/* for ipad pro */
-@media only screen and (max-width : 1024px) {
-  #intro {
-    width:80%;
-  }
-  #largeTitle {
-    font-size:40pt;
-  }
-  #hi {
-    font-size:20pt;
-  }
-}
-
-/* for iphone */
-@media only screen and (max-width : 768px) {
-  #intro {
-    width:80%;
-  }
-  #largeTitle {
-    font-size:40pt;
-  }
-  #hi {
-    font-size:20pt;
-  }
-}
-
-@media only screen and (max-width : 378px) {
-  #intro {
-    width:80%;
-  }
-  #largeTitle {
-    font-size:40pt;
-  }
-  #hi {
-    font-size:20pt;
-  }
-}
-

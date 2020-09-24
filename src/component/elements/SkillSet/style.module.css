@@ -57,7 +57,7 @@
 .resumeContainer {
   align-self:flex-end;
   width:30%;
-  margin-bottom: 0.5rem;
+  margin: 0.5rem;
   
 }
 #resumeBtn {
@@ -95,23 +95,33 @@
 /* for iphone */
 @media only screen and (max-width : 768px) {
   .skillset {
-    width:90%;
+    width:80%;
+    flex-flow: column nowrap;
+  }
+  .skillsetTitle,.skillContainer {
+    width: 100%;
+    margin:1rem;
   }
   .title {
-    font-size: 18pt;
+    font-size:20pt;
+  }
+  .resumeContainer {
+    margin-top: 5rem;
+    align-self: center;
+    width: 50%;
   }
 
 }
 
-@media only screen and (max-width : 378px) {
-  #intro {
-    width:80%;
+@media only screen and (max-width : 500px) {
+  .techTitle, .softTitle {
+    font-size:12pt;
   }
-  #largeTitle {
-    font-size:40pt;
-  }
-  #hi {
-    font-size:20pt;
+  .resumeContainer {
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    align-self: center;
+    width: 50%;
   }
 }
 

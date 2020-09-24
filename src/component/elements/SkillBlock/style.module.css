@@ -12,45 +12,19 @@
 }
 
 
-@media (max-width : 1350px) {
-  #intro {
-    width:60%;
-  }
-  #largeTitle {
-    font-size:40pt;
-  }
-  #hi {
-    font-size:20pt;
-  }
-}
-
-/* for ipad pro */
-@media only screen and (max-width : 1024px) {
-  #intro {
-    width:80%;
-  }
-  #largeTitle {
-    font-size:40pt;
-  }
-  #hi {
-    font-size:20pt;
-  }
-}
-
 /* for iphone */
 @media only screen and (max-width : 768px) {
 
 }
 
-@media only screen and (max-width : 378px) {
-  #intro {
-    width:80%;
+@media only screen and (max-width : 450px) {
+  .text {
+    font-size:10pt;
   }
-  #largeTitle {
-    font-size:40pt;
-  }
-  #hi {
-    font-size:20pt;
+  .skillBlock {
+    padding: 0.2rem 0.5rem;
+    margin:0.2rem 0.5rem;
   }
 }
+
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import style from './style.module.css'
-import profilePic from '../../assets/tempProfilePic.png'
+import profilePic from '../../assets/Profileshot_sq.png'
 
 export default function AboutMe (props) {
     return (
