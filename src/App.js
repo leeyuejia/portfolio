@@ -13,7 +13,7 @@ function App() {
   window.onscroll = ()=> {scrollFunction()}
 
   const scrollFunction = () => {
-    if((document.body.scrollTop >100 && document.body.scrollTop <900) || (document.documentElement.scrollTop > 100 && document.documentElement.scrollTop < 900) ) {
+    if((document.body.scrollTop > 100 && document.body.scrollTop < 900) || (document.documentElement.scrollTop > 100 && document.documentElement.scrollTop < 900) ) {
       console.log('scrolled 80')
       document.getElementById('navbar1').classList.remove('none')
       document.getElementById('navbar1').className='style_NavBarOnScroll__3Y5yu'
