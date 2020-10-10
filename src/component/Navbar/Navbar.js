@@ -1,5 +1,5 @@
-import React, { Component, Fragment, useState } from 'react'
-import style from './style.module.css'
+import React, { Component, Fragment, useState, useContext } from 'react'
+import style, { ThemeContext } from 'styled-components'
 import logo from '../../logo.svg'
 import PinterestIcon from '@material-ui/icons/Pinterest';
 import InstagramIcon from '@material-ui/icons/Instagram';
@@ -14,63 +14,30 @@ import {
     MDBCollapse,
     MDBHamburgerToggler 
   } from 'mdbreact';
+import Switch from '../elements/Switch'
+import Logo from './Logo';
 
 
 export default function NavBar(props) {
-    // const [navBarClass, setNavBarClass] = useState(style.NavBar)
-    // const [toggleClass, settoggleClass] = useState(true)
-    const [collapseID, setcollapseID] = useState(false)
-    // const anime = require('animejs')
-    // anime({
-    //     targets: '#navbar',
-    //     translateX: 250,
-    //     rotate: '1turn',
-    //     backgroundColor: '#FFF',
-    //     duration: 800
-    //   });
+    const themeContext = useContext(ThemeContext)
 
+    const [collapseID, setcollapseID] = useState(false)
     const toggleCollapse = () => {
         setcollapseID(!collapseID)
     } 
-    
+    console.log(themeContext)
 
-    // const toggle= () => {
-    //     settoggleClass(!toggleClass)
-    //     // setNavBarClass(style.NavBarOnScroll)
-    // }
-    // const handleScroll = (e) => {
-    //     const target= e.target
-    //     console.log(target.scrollHeight)
-    //     console.log(target.scrollTop)
-    // }
-    // window.onscroll = () => {scrollFunction()}
-    // const scrollFunction = () => {
-    //     if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-    //         console.log('scrolled 80')
-    //         toggle()
-    //     } else {
-    //         console.log('scrolled -80')
-    //         settoggleClass(true)
-    //         // setNavBarClass(style.NavBarOnScroll)
-    //     }
-    // }
-    // {toggleClass? style.NavBar : style.NavBarOnScroll}
     return(
-        <div className={style.navBarContainer}>
+        <div>
             <div className={style.NavBar} id='navbar1'>
-                <div className={style.logoContainer}>
-                    <img src={logo} alt='logo' title='logo' id={style.navLogo}/>
-                </div>
-
-                {/* <div className='navLink'> */}
+                <Logo/>
+                <Switch/>
                     <ul className={style.navList}>
-                        <li><a href='#home' className={style.link}>Home</a></li>
-                        <li><a href='#about'className={style.link}>About</a></li>
-                        <li><a href='#project'className={style.link}>Project</a></li>
-                        <li><a href='#contact'className={style.link}>Contact</a></li>
-                    </ul>
-                {/* </div> */}
-                
+                        <li><a href='#home' className= ''>Home</a></li>
+                        <li><a href='#about'className= ''>About</a></li>
+                        <li><a href='#project'className= ''>Project</a></li>
+                        <li><a href='#contact'className= ''>Contact</a></li>
+                    </ul>            
                 <div className={style.socialBtn}>
                     <a href='https://pinterest.com/leeyuejia/boards' target='blank'>
                         <PinterestIcon  className={style.PinterestIcon}/>
@@ -82,7 +49,7 @@ export default function NavBar(props) {
                         <GitHubIcon  className={style.GitHubIcon}/>
                     </a>
                     <a href='https://linkedin.com/in/leeyuejia' target='blank'>
-                        <LinkedInIcon  className={style.LinkedInIcon}/>
+                        <LinkedInIcon  className= {style.LinkedInIcon}/>
                     </a>
                     <a href='https://codepen.io/leeyuejia' target='blank'>
                         <MDBIcon fab icon="codepen" className={style.CodePen}/>
@@ -90,8 +57,9 @@ export default function NavBar(props) {
                 </div>
             </div>
 
+{/* --------------------------   for mobile user --------------------------*/}
 
-                <MDBNavbar className={style.mobileNavBar} dark>
+                {/* <MDBNavbar className={style.mobileNavBar} dark>
                     <div className={style.mobileNavBarContainer} >
                         <div className={style.mobileLogoContainer}>
                             <div className={style.logoContainer}>
@@ -101,10 +69,10 @@ export default function NavBar(props) {
                         </div>
                         <MDBCollapse id='navbarCollapse1' isOpen={collapseID} navbar>
                             <MDBNavbarNav right className={style.mobileNavBarMenu}>
-                                <li><a href='#home' className={style.link}>Home</a></li>
-                                <li><a href='#about'className={style.link}>About</a></li>
-                                <li><a href='#project'className={style.link}>Project</a></li>
-                                <li><a href='#contact'className={style.link}>Contact</a></li>
+                                <li><a href='#home' className= ''>Home</a></li>
+                                <li><a href='#about'className= ''>About</a></li>
+                                <li><a href='#project'className= ''>Project</a></li>
+                                <li><a href='#contact'className= ''>Contact</a></li>
                             </MDBNavbarNav>
                             <div className={style.socialBtn}>
                                 <a href='https://pinterest.com/leeyuejia/boards' target='blank'>
@@ -117,7 +85,7 @@ export default function NavBar(props) {
                                     <GitHubIcon  className={style.GitHubIcon}/>
                                 </a>
                                 <a href='https://linkedin.com/in/leeyuejia' target='blank'>
-                                    <LinkedInIcon  className={style.LinkedInIcon}/>
+                                    <LinkedInIcon  className= ''dInIcon}/>
                                 </a>
                                 <a href='https://codepen.io/leeyuejia' target='blank'>
                                     <MDBIcon fab icon="codepen" className={style.CodePen}/>
@@ -125,7 +93,7 @@ export default function NavBar(props) {
                             </div>
                         </MDBCollapse>
                     </div>
-                </MDBNavbar>
+                </MDBNavbar> */}
 
         </div>
 
